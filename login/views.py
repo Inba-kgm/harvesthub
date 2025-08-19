@@ -1,5 +1,7 @@
 from django.shortcuts import render
 from .models import cracc
+from farmerproduct import *
+import json
 
 # Create your views here.
 def login_page(request):
