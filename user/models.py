@@ -17,4 +17,13 @@ class addcart(models.Model):
     destination=models.CharField(max_length=220,default='')
     acceptcartid=models.CharField(max_length=20,default='')
     acceptedcartid=models.CharField(max_length=20,default='')
+
+class userrprofile(models.Model):
+    img_1=models.ImageField(default='')
+    username=models.CharField(max_length=20,default="")
+    password=models.CharField(max_length=20,default="")
+    email=models.CharField(max_length=20,default="")
+    phone=models.CharField(max_length=20,default="")
+    location=models.CharField(max_length=220,default='')
+    date=models.CharField(max_length=220,default='')
     
