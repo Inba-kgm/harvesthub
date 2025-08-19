@@ -157,7 +157,8 @@ def verify(request):
         return render(request,'login/login.html')
 
     else:
-        return render(request,'farmer/farmprofile.html')
+        error={"err":'*OTP Mismatch'}
+        return render(request,'login/signup.html',error)
 
 def forgotpasspage(request):
     return render(request,'login/forgotpassword.html')
