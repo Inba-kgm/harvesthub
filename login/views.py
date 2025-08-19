@@ -16,4 +16,4 @@ def over(request):
     products=farmerproduct.objects.all()
     products_list=list(products.values())
     context={'products_json':json.dumps(products_list),'products_count':products.count,'myname':myname}
-    return render(request,'cover/over.html',context)
+    return render(request,'over/cover.html',context)
