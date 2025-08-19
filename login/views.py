@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from .models import cracc
-from farmerproduct import *
+from farmer.models import *
 import json
 
 # Create your views here.
